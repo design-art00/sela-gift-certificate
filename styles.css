@@ -156,3 +156,4 @@ h1, h2, h3, h4, h5, h6, .footer h2 { font-weight: 500; }
 .card-turn { overflow: visible; }
 .card-turn #preview-image { width: calc(100% - 32px); left: 16px; }
 .card-css-inner { width: calc(100% - 32px); }
+.amount-hint { font-size: 12px; }
