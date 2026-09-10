@@ -27,15 +27,11 @@ if (button && fallback) {
 
   preview.addEventListener('animationend', () => preview.classList.remove('is-spinning'));
   button.addEventListener('mouseenter', spin);
-  button.addEventListener('click', spin);
   document.addEventListener('certificate-preview-change', () => {
     updateImages();
-    spin();
   });
-  reducedMotion.addEventListener('change', () => { if (!reducedMotion.matches) spin(); });
 
   fallback.style.display = 'none';
   if (canvas) canvas.style.display = 'none';
   updateImages();
-  if (!reducedMotion.matches) setTimeout(spin, 120);
 }
