@@ -152,3 +152,7 @@ h1 { font-size: 28px; line-height: 1.2; }
 h1, h2, h3, h4, h5, h6, .footer h2 { font-weight: 500; }
 .card-motion-toggle { margin: 16px auto 0; color: var(--muted); }
 .card-turn:not(.is-rendered) + .card-motion-toggle { visibility: hidden; }
+/* Leave room for the rotated corners so the preview stays fully visible. */
+.card-turn { overflow: visible; }
+.card-turn #preview-image { width: calc(100% - 32px); left: 16px; }
+.card-css-inner { width: calc(100% - 32px); }
