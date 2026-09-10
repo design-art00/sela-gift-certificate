@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1db441">
+  <title>Подарочный сертификат | sela.</title>
+  <link rel="stylesheet" href="styles.css?v=14">
+  <script defer src="assets/lucide.min.js"></script>
+  <script defer src="script.js?v=2"></script>
+  <script type="module" src="card-preview.js?v=12"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="container header">
+    <a href="#home" class="brand" aria-label="sela. — на главную"><img src="assets/logo.webp" width="140" height="35" alt="sela."></a>
+    <nav class="header-nav" aria-label="Магазин">
+      <button class="city text-button" data-dialog="city">Москва</button>
+      <button class="icon-button" data-dialog="search" title="Поиск" aria-label="Поиск"><i data-lucide="search"></i></button>
+      <button class="icon-button" data-dialog="account" title="Личный кабинет" aria-label="Личный кабинет"><i data-lucide="user-round"></i></button>
+      <button class="icon-button" data-dialog="favorites" title="Избранное" aria-label="Избранное"><i data-lucide="heart"></i></button>
+      <button class="icon-button" data-dialog="basket" title="Корзина" aria-label="Корзина"><i data-lucide="shopping-bag"></i></button>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="home" class="container home-view">
+      <div class="intro">
+        <h1>подарочный сертификат</h1>
+        <p>Идеальный подарок по поводу и без для близких, друзей или коллег!</p>
+        <a class="button white" href="#design">Оформить сертификат</a>
+      </div>
+      <div class="benefits">
+        <article><h2>Легко купить</h2><img src="assets/buy.png" alt="" width="130" height="99"><p>Укажите получателя, сумму и дизайн</p></article>
+        <article><h2>Легко подарить</h2><img src="assets/gift.png" alt="" width="130" height="99"><p>Отправим на e-mail</p></article>
+        <article><h2>Легко воспользоваться</h2><img src="assets/use.png" alt="" width="130" height="99"><p>Оплатить можно полностью или частично<br>на sela.ru, в приложении и в магазинах</p></article>
+      </div>
+      <section class="balance-band"><h2>у вас уже есть подарочный сертификат?</h2><div class="button-row"><button class="button green" data-dialog="balance">Проверить баланс</button><button class="button" data-dialog="pin">Получить ПИН-код</button></div></section>
+      <section class="faq"><h2>популярные вопросы о сертификатах</h2><div id="faq-list"></div></section>
+    </section>
+    <section id="order" class="container order-view" hidden>
+      <h1>подарочный сертификат</h1>
+      <nav class="steps" aria-label="Шаги оформления"></nav>
+      <div class="order-layout">
+        <div id="screen" class="screen"></div>
+        <aside class="preview" aria-label="Предпросмотр сертификата"><button type="button" class="card-turn" aria-label="Повернуть сертификат" title="Повернуть сертификат"><img id="preview-image" src="assets/card-texture.webp" width="1459" height="915" alt="Выбранный дизайн сертификата"><span class="card-canvas" aria-hidden="true"></span></button><p id="preview-caption" class="visually-hidden" aria-live="polite"></p></aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <h2>-10% на твой первый заказ за подписку</h2>
+      <nav class="footer-nav" aria-label="Информация"><button data-dialog="city">Москва</button><button data-dialog="info">Инфо</button><button data-dialog="about">О нас</button><button data-dialog="stores">Магазины</button><button data-dialog="apps">Приложение</button></nav>
+      <form class="subscription"><div class="email-line"><input type="email" name="email" required placeholder="введите ваш e-mail" aria-label="E-mail для подписки"><button class="icon-button" type="submit" title="Подписаться" aria-label="Подписаться"><i data-lucide="arrow-right"></i></button></div><label class="consent"><input type="checkbox" required><span>Даю <u>согласие на обработку моих персональных данных</u> в целях получения рекламной и информационной рассылки.<br>Подробную информацию об условиях обработки Ваших данных и Ваших правах можно найти в <button type="button" class="inline-link" data-dialog="privacy">Политике конфиденциальности</button>.<br>Скидка 10% не распространяется на товары со скидками</span></label></form>
+      <div class="store-badges"><button data-dialog="apps"><i data-lucide="apple"></i><span>Загрузите в<strong>App Store</strong></span></button><button data-dialog="apps"><i data-lucide="play"></i><span>ДОСТУПНО В<strong>Google Play</strong></span></button><button data-dialog="apps"><i data-lucide="smartphone"></i><span>Скачайте из<strong>RuStore</strong></span></button></div>
+      <div class="social-block"><div class="socials"><button data-dialog="social" aria-label="Telegram" title="Telegram"><i data-lucide="send"></i></button><button data-dialog="social" aria-label="Сообщество" title="Сообщество"><i data-lucide="message-circle"></i></button><button data-dialog="social" aria-label="Видео" title="Видео"><i data-lucide="youtube"></i></button><button data-dialog="social" aria-label="Instagram" title="Instagram"><i data-lucide="instagram"></i></button></div><p>2022 SELA © Все права защищены.</p></div>
+    </div>
+  </footer>
+  <dialog id="modal" aria-labelledby="modal-title"><button class="icon-button modal-close" aria-label="Закрыть" title="Закрыть"><i data-lucide="x"></i></button><div id="modal-content"></div></dialog>
+  <noscript>Для оформления сертификата включите JavaScript в браузере.</noscript>
+</body>
+</html>
